@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:text="Khoản"
+        android:textColor="#ffffff"
+        android:background="#ff9900"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNgay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:hint="Thời gian"
+            android:textSize="15pt" />
+
+        <Button
+            android:id="@+id/btchonngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Chọn ngày" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15pt"
+        android:inputType="number"
+        android:hint="Số tiền" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Loại"
+            android:textSize="10pt"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spnLoai"
+            android:layout_width="338dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNoidung"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:hint="Nội dung"
+        android:textSize="12pt"
+        android:textAlignment="textStart"
+        android:inputType="textMultiLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="350px">
+
+        <Button
+            android:id="@+id/bthuy"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="HỦY" />
+        <Button
+            android:id="@+id/btthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"/>
+    </LinearLayout>
+
+</LinearLayout>
